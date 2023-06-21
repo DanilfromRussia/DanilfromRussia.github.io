@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #271f07;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 40px;
+}
+
+.header__logo {
+    background-image: url("../images/website-logo/Group1logo.png");
+    width: 48px;
+    height: 48px;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    font-weight: 600;
+    font-size: 16px;
+    src: url("../fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf");
+}
+
+.header__cntnr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    font-family: "Be Vietnam Pro";
+
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 12px;
+    gap: 48px;
+    color:white;
+}
+
+.btn {
+    max-width: 184px;
+    height: 48px;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-text {
+    padding: 12px 24px 12px 24px;
+    color: white;
+    background-color: #EE8313;
+    font-family: "Be Vietnam Pro";
+}
+
+.mustang-and-deals {
+    display: inline-block;
+    color: white;
+    margin-top: 255px;
+    margin-left: 120px;
+}
+
+.description__huge-text {
+    width: 591px;
+    height: 128px;
+    font-family: "Be Vietnam Pro";
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.description__smaller-text {
+    width: 474px;
+    height: 56px;
+    font-family: "Be Vietnam Pro";
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+.description-buttons {
+    max-width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 35px;
+}
+
+#vd-btn {
+    width: 400px;
+    height: 48px;
+}
+
+.vd-btn-text {
+    padding: 12px 24px 12px 24px;
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+}
+
+.advertising {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.advertising-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.advertising-num {
+    font-family: "Be Vietnam Pro";
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.advertising-text {
+    font-family: "Be Vietnam Pro";
+}
+
+.advertising-container {
+    position: relative;
+    z-index: 3;
+}
+
+.advertising-container {
+    background-color: rgb(107, 210, 254);
+    box-shadow: 0px 0px 20px #fff;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.advertising-container:hover {
+    box-shadow: 0px 0px 50px #00ffff, 0px 0px 100px #00ffff, 0px 0px 150px #00ffff, 0px 0px 200px #00ffff, 0px 0px 250px #00ffff;
+    animation: neon-glow 1s infinite alternate;
+    transform: rotate(1deg);
+  }
+  
+@keyframes neon-glow {
+    from {
+      box-shadow: 0px 0px 10px #8dff46, 0px 0px 20px #8dff46, 0px 0px 30px #8dff46, 0px 0px 40px #8dff46, 0px 0px 50px #8dff46;
+    }
+    to {
+      box-shadow: 0px 0px 20px #8dff46, 0px 0px 40px #8dff46, 0px 0px 60px #8dff46, 0px 0px 80px #8dff46, 0px 0px 100px #8dff46;
+    }
+}
+
+
+.header__mustang-pic {
+    top: 280px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.premain-title {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: "Be Vietnam Pro";
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+}
+
+.main__luxury-cars {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 32px;
+}
+
+.cars-rang {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    font-family: "Be Vietnam Pro";
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,0,0);
+}
+
+.red-ferrari,
+.shadow-green-asten,
+.four-x-four-car,
+.porsche {
+    position: relative;
+}
+
+.discover_and_mark {
+    display: flex;
+    position: absolute;
+    gap: 22px;
+    right: 56px;
+    bottom: 48px;
+    color: white;
+    background: rgba(0,0,0,0);
+}
+
+.discover_and_mark span {
+    font-family: "Be Vietnam Pro";
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background: rgba(0,0,0,0);
+}
+
+.discover_and_mark>img {
+    background: rgba(0,0,0,0);
+}
+
+#premain__services-title {
+    margin-top: -60px;
+    margin-left: 118px;
+    text-align: left;
+}
+
+.main__services {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    justify-content: center;
+    color: white;
+}
+
+.services__description {
+    font-family: "Be Vietnam Pro";
+    font-weight: 400;
+    margin-top: 16px;
+    opacity: 80%;
+}
+
+.service-title {
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 24px;
+}
+
+.car-rent-destination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    color: white;
+    font-family: "Be Vietnam Pro";
+}
+
+.london,
+.madrid,
+.paris,
+.dubai,
+.roma,
+.jakarta {
+    position: relative;
+}
+
+.destination-description {
+    position: relative;
+    top: -4px;
+    padding: 0px 24px 24px 24px;
+    background: #171717;
+}
+
+.cost_and_logo {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 1px;
+    gap: 12px;
+}
+
+.search-rent-orange-link {
+    color: #EE8313;
+}
+
+.location {
+    margin-bottom: 102px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: #1F1905;
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer_container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 250px;
+    gap: 64px;
+}
+
+.footer_container_menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 17px;
+    font-family: "Be Vietnam Pro";
+}
+
+.footer__saling-text {
+    font-family: "Be Vietnam Pro";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 18px;
+    src: url("../fonts/Manrope/static/Manrope-Light.ttf");
+}
+
+.footer_companies,
+.footer_supports,
+.footer_categories {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 16px; /* 16px here + 16px in html class */
+}
+
+.footer_fb-inst-youtb {
+    display: flex;
+    flex-flow: column wrap;
+    filter: invert(100%);
+    padding: 29px 5px 26px 42px;
+}
+
+.footer__lead {
+    font-family: "Manrope";
+}
+
+.footer_copyright-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EE8313;
+    color:rgb(255, 255, 255);
+    font-family: "Be Vietnam Pro";
+    font-weight: 400;
+    height: 68px;
+}
+
+@media (max-width: 1314px) {
+    .mustang-and-deals {
+        margin-top: 135px;
+    }
+}
+
+@media (max-width: 947px) {
+    .mustang-and-deals {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 910px) {
+    .footer {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_container {
+        width: auto;
+        gap: 16px;
+    }
+
+    .footer__saling-text {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 793px) {
+    .destination-description {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    .media-793px {
+        width: 100%;
+        height: auto;
+    }
+    
+    .mobile {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .mobile-descript {
+        font-size: 26px;
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+}
+
+@media (max-width: 710px) {
+    body {
+        border: none;
+    }
+
+    .mustang-and-deals {
+        margin: 10% 0% 0% 5%;
+    }
+
+    .description__huge-text,
+    .description__smaller-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .header__mustang-pic {
+        display: none;
+    }
+
+    .premain-title {
+        padding-top: 100px;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    #premain__services-title {
+        margin-left: 5%;
+    }
+
+    .cars-rang {
+        top: 0;
+        padding-top: 48px;
+    }
+}
+
+@media (max-width: 636px) {
+    .footer_fb-inst-youtb {
+        padding: 29px 5px 26px 0px;
+    }
+}
+
+@media (max-width: 435px) {
+    .header {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 22px;
+    }
+
+    .btn {
+        max-width: 226px;
+        font-size: 18px;
+    }
+
+    .footer_fb-inst-youtb {
+        padding-right: 0;
+    }
+}
